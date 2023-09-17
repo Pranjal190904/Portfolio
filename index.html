@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+hello
+</title>
+<style>
+#navbar{
+    display:flex;
+    align-items: center;
+    position:relative;
+}
+#navbar::before{
+content:"";
+background-color: rgb(34, 32, 32);   
+position:absolute;
+top:0px;
+left:0px; 
+height: 100px;
+width: 1500px;
+z-index:-1;
+}
+#navbar ul{
+    display:flex;
+    list-style: none;
+    
+}
+#navbar ul li {
+    font-size: 5rem;
+}
+#navbar ul li a{
+    display:block;
+    color:white;
+    font-size: 2rem;
+    padding : 1rem 3rem;
+   text-decoration: none;
+   
+}
+#navbar ul li a:hover{
+color:grey;
+}
+    .photo{
+        margin: 5px 600px;
+    }
+    .heading{
+        font-size: 50px;
+        color: blue;
+        margin: 5px 600px;
+    }
+    p{
+        font-size: 20px;
+        margin: 5px 5px;
+    }
+    #contacts{
+        background-color: gray;
+        
+    }
+    #skills .box{
+        border: 3px solid rgb(235, 156, 156);
+        padding: 15px;
+        margin: 5px 100px 5px 100px;
+        background-color: burlywood;
+    }
+    .box{
+        border: 3px solid black;
+        margin: 10px 10px 10px 10px;
+    }
+    .icon{
+        margin: 5px 600px;
+    }
+    .ach{
+        margin: 5px 400px;
+    }
+    .feed{
+        margin: 5px 600px;
+    }
+    .link{
+        margin: 5px 550px
+    }
+
+</style>
+</head>
+<body align="center">
+    <nav id="navbar">
+        <img src="https://www.seekpng.com/png/full/111-1112824_picture-my-portfolio-logo-png.png" height="100">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Certificates">Certificates</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </nav>
+<div class="photo">
+    <img src="photo.jpg" height="300">
+</div>
+<section id="about" class="box">
+<div>
+<h1 class="heading"><i>About Me</i></h1>
+<p>My name is Pranjal. Currently, I am Persuing my B.Tech. in Computer Science and Engineering from Ajay Kumar Garg Engineering College, Ghaziabad.
+     I belongs to Baghpat, Uttar Pradesh.My schooling is from Saint Angels Public School, Baghpat. In Sports, I like to play volleyball and badminton.
+     My Hobby is to explore new things. </p><br>
+</div>
+</section>
+<section id="skills" class="box">
+    <h1 class="heading"><i>Skills</i></h1>
+    <div class="box">
+        <img src="c.jpg" height="80" class="icon">
+        <br>
+        <h3>C Programming</h3>
+        <p>I am having basic knowledge of c programming. I know all the basic concepts and algorithms in c like array, strings, loop.</p>
+    </div>
+    <div class="box">
+        <img src="cpp.png" height="80" class="icon"><br>
+        <h3>C++ Programming</h3>
+        <p>I know all the basics of c++ programming. I am able to write basic codes in c++ language. I do competitive programming in C++.</p>
+    </div>
+    <div class="box">
+        <img src="web.png" height="80" class="icon"><br>
+        <h3>Web Development</h3>
+        <p>I am having knowledge of HTML tags. I am able to make a normal website with the help of HTML and CSS. </p>
+    </div>
+    <div class="box">
+        <img src="pyth.avif" height="80" class="icon"><br>
+        <h3>Python Programming</h3>
+        <p>I am having a basic knowledge of Python Programming Language. I can implement all the basic concepts of computer programming in python language.</p>
+    </div>
+</section>
+<section id="Certificates" class="box">
+    <h1 class="heading">Certifications</h1>
+    <div>
+        <img src="pscert.jpg" height="350" class="ach">
+        <img src="cert.jpg" height="350" class="ach">
+    </div>
+</section>
+<section id="contacts">
+    <h1 class="heading"><i>Contact Me</i></h1>
+    <div class="link">
+        <a href="https://www.instagram.com/pranjal._.lovey/" target="_blank"><img src="insta.avif" height="80"></a>
+        <a href="https://www.facebook.com/pranjal.rajput.376695" target="_blank"><img src="fb.png" height="80"></a>
+        <a href="mailto:pranjalvyas45@gmail.com" target="_blank"><img src="mail.jpg" height="80" ></a>
+    </div>
+    <div class="feed">
+        <h2>Feedback Form</h2>
+        <form action="feedback.php" id="form">
+            Name:<input type="text" placeholder="enter your name"><br><br>
+            E-mail:<input type="text" placeholder="enter your email"><br><br>
+            <textarea type="text" rows="2" columns="10" placeholder="Write something here"></textarea><br>
+            <input type="submit">
+        </form>
+    </div>
+</section>
+</body>
+</html>
